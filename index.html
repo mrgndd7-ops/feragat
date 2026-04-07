@@ -18,8 +18,7 @@
 
       --color-bg:        #ffffff;
       --color-bg-alt:    #f8f5f0;
-      --color-bg-star:   #fafafa;
-      --color-text:      #2d2d2d;
+--color-text:      #2d2d2d;
       --color-text-muted:#888;
       --color-border:    #e8e4de;
 
@@ -388,64 +387,6 @@
       color: var(--color-primary);
     }
 
-    /* ─────────────────────────────────────────
-       BEBEK VE ÇOCUK
-    ───────────────────────────────────────── */
-    .bebek {
-      padding: 80px 0;
-      background: var(--color-bg-star);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .bebek::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-image: radial-gradient(circle, #d0d0d0 1px, transparent 1px);
-      background-size: 40px 40px;
-      opacity: .25;
-      pointer-events: none;
-    }
-
-    .bebek > * { position: relative; }
-
-    .bebek__grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px;
-    }
-
-    .bebek-card {
-      cursor: pointer;
-    }
-
-    .bebek-card__image {
-      aspect-ratio: 16/10;
-      background: #e0dbd4;
-      border-radius: var(--radius-lg);
-      margin-bottom: 16px;
-      overflow: hidden;
-    }
-
-    .bebek-card__image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform .4s ease;
-    }
-
-    .bebek-card:hover .bebek-card__image img {
-      transform: scale(1.04);
-    }
-
-    .bebek-card__name {
-      font-family: var(--font-heading);
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--color-primary);
-      margin-bottom: 2px;
-    }
 
     /* ─────────────────────────────────────────
        HAKKINDA
@@ -642,8 +583,7 @@
 
     @media (max-width: 480px) {
       .yatak-odasi__grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .bebek__grid { grid-template-columns: 1fr; }
-      .footer__grid { grid-template-columns: 1fr; }
+.footer__grid { grid-template-columns: 1fr; }
       .hakkinda__stats { flex-direction: column; gap: 20px; }
     }
   </style>
@@ -659,7 +599,6 @@
         <ul class="navbar__links">
           <li><a href="#yatak-odasi">Yatak Odası</a></li>
           <li><a href="#banyo">Banyo</a></li>
-          <li><a href="#bebek">Bebek & Çocuk</a></li>
           <li><a href="#hakkinda">Kurumsal</a></li>
           <li><a href="#iletisim">İletişim</a></li>
         </ul>
@@ -815,35 +754,6 @@
   </section>
 
 
-  <!-- ─────────── BEBEK & ÇOCUK ─────────── -->
-  <section class="bebek" id="bebek">
-    <div class="container">
-      <div class="section-head">
-        <h2>Bebek ve Çocuk</h2>
-        <p>Birbirinden eğlenceli ve rengarenk ev tekstili ürünlerimizle miniklerin hayal dünyasını yaşam alanlarına dönüştürüyoruz.</p>
-      </div>
-
-      <div class="bebek__grid">
-
-        <div class="bebek-card">
-          <div class="bebek-card__image">
-            <img src="https://placehold.co/800x500/f8f5f0/8b6f47?text=Bebek+Nevresim" alt="Nevresim Takımları">
-          </div>
-          <div class="bebek-card__name">Nevresim Takımları</div>
-          <a href="#" class="kesfet-link">Koleksiyonu Keşfet</a>
-        </div>
-
-        <div class="bebek-card">
-          <div class="bebek-card__image">
-            <img src="https://placehold.co/800x500/f8f5f0/8b6f47?text=Bebek+Bornoz" alt="Bornoz & Havlular">
-          </div>
-          <div class="bebek-card__name">Bornoz & Havlular</div>
-          <a href="#" class="kesfet-link">Koleksiyonu Keşfet</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
 
   <!-- ─────────── HAKKINDA ─────────── -->
@@ -910,7 +820,6 @@
           <ul class="footer__links">
             <li><a href="#yatak-odasi">Yatak Odası</a></li>
             <li><a href="#banyo">Banyo</a></li>
-            <li><a href="#bebek">Bebek & Çocuk</a></li>
           </ul>
         </div>
 
